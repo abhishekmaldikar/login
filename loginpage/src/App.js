@@ -37,21 +37,23 @@ function App() {
             }}
           >
             <h1>Login Page</h1>
-            <lable htmlFor="username">Username:</lable>
+            <lable htmlFor="username">Username</lable>
             <input
               type="text"
               id="username"
               value={userName}
               placeholder="username"
               onChange={(e) => setUserName(e.target.value)}
+              required
             />
-            <lable htmlFor="password">Password:</lable>
+            <lable htmlFor="password">Password</lable>
             <input
               type="password"
               id="password"
               value={password}
               placeholder="password"
               onChange={(e) => setPassword(e.target.value)}
+              required
             />
             <button type="submit">Submit</button>
           </form>
