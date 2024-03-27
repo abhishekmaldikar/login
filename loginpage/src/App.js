@@ -12,6 +12,7 @@ function App() {
     e.preventDefault();
     if (userName === "user" && password === "password") {
       setValidUser(true);
+      setErrMsg(false);
     } else {
       setValidUser(false);
       setErrMsg(true);
@@ -37,7 +38,7 @@ function App() {
             }}
           >
             <h1>Login Page</h1>
-            <lable htmlFor="username">Username</lable>
+            <label htmlFor="username">Username</label>
             <input
               type="text"
               id="username"
@@ -46,7 +47,7 @@ function App() {
               onChange={(e) => setUserName(e.target.value)}
               required
             />
-            <lable htmlFor="password">Password</lable>
+            <label htmlFor="password">Password</label>
             <input
               type="password"
               id="password"
